@@ -22,3 +22,12 @@
 
  grant operate on warehouse transforming to role transformer;
  grant usage on warehouse transforming to role transformer;
+
+ create user            'insert name here'
+ email =                'insert email here'
+ password =             'insert password here'
+ default_role =         transformer
+ default_warehouse =    transforming
+ must_change_password = true;
+ 
+ grant role transformer to user 'insert name here';
